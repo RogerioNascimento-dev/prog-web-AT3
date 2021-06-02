@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>produtos | Smartphone.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="src/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<header>
+    <nav>
+        <a href="index.html">
+            <img src="src/img/logo.png" alt="Smartphone.com">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+
+    <section class="products-section">
+        <div class="products-container">
+            <h1>Produtos</h1>
+            <ul id="products-list">
+            </ul>
+        </div>
+        <div class="cart-container">
+            <h1>Carrinho</h1>
+            <div id="content-cart">
+            </div>
+
+            <div class="container-shipping" style="display: none;">
+                <div class="form-cep">
+                    <label for="cep">Cep para entrega:</label>
+                    <input id="cep" maxlength="8" autocomplete="off" type="text" placeholder="Ex 42717110">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                <p><span id="shipping-to-region"></span> <span id="shipping-to-price"></span></p>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+    <p>Copyright &copy 2021 | Atividade final para disciplina Programação Web do curso de Sistemas de Informação 2021.1</p>
+</footer>
+
+<body>
+    <script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>

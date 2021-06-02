@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Contato | Smartphone.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="src/css/bootstrap.css" rel="stylesheet">
+    <link href="src/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<header>
+    <nav>
+        <a href="index.html">
+            <img src="src/img/logo.png" alt="Smartphone.com">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a class="active" href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+        <div class="row my-auto" id="contact">
+            <div class="col-md-8">
+                <div class="contact-cont">
+                    <h3>Contato</h3>
+                    <div class="heading-border-light"></div>
+                    <p>Olá, ficaremos felizes em ouvir o que você tem a nos dizer, deixe seu contato através do formulário abaixo.</p>
+                </div>
+                <div class="row con-form">
+                    <div class="col-md-12">
+                        <input type="text" id="nome" name="full-name" placeholder="Nome" class="form-control">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" id="email" name="email" placeholder="E-mail" class="form-control">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" id="assunto" name="subject" placeholder="Assunto" class="form-control">
+                    </div>
+                    <div class="col-md-12"><textarea id="mensagem"></textarea></div>
+                    <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" onclick="enviarMensagem()" role="button">Enviar</button></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+                <div class="contact-cont2">
+                    <div class="contact-add contact-box-desc">
+                        <h3><i class="fa fa-map-marker cl-atlantis fa-2x"></i> Endereço</h3>
+                        <p>Rua dos bobos n° 0, Lauro de Freitas <br> Bahia
+                            <br></p>
+                    </div>
+                    <div class="contact-phone contact-side-desc contact-box-desc">
+                        <h3><i class="fa fa-phone cl-atlantis fa-2x"></i> Telefone</h3>
+                        <p>71 98113-6366</p>
+                    </div>
+                    <div class="contact-mail contact-side-desc contact-box-desc">
+                        <h3><i class="fa fa-envelope cl-atlantis fa-2x"></i> E-mail</h3>
+                        <address class="address-details-f" style="font-size: 1rem;">                   
+          E-mail: <a href="mailto:rogerionascimento.dev@outlook.com.br" class="">rogerionascimento.dev@outlook.com.br</a>
+        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+    <p>Copyright &copy 2021 | Atividade final para disciplina Programação Web do curso de Sistemas de Informação 2021.1</p>
+</footer>
+<script src="src/js/bootstrap.js"></script>
+
+<body>
+</body>
+
+</html>
